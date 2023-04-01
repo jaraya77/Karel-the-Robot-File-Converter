@@ -1,23 +1,23 @@
  /***************************************************************************************
- *	Johnny Araya																		
- *	5/18/2022																			
- *	Final Project- Karel and Jarel File Converter 										
- *																						
- *	This program coverts a Karel world file into a Jarel world file 					*
- *	and also from Jarel world file into a Karel world file and makes					*
- *	a new file with '_Converted' at the end of the file. Not only my 					*
- *	program can covert an individual file but it can convert a whole 					*
- *	directory of Jarel and Karel files if you prompt it too.							*
- *																						
- *	Mars Hill University Honor Code														
- *		We, the students of Mars Hill University, pledge ourselves 						
- *		to uphold integrity, honesty, and academic responsibility 						
- *		in and out of the classroom.													
- *																						
- *	Mars Hill University Honor Pledge													
- *		On my honor, I have neither given nor received any academic aid 				*
- *		or information that would violate the Honor Code of Mars Hill University		
- *																						
+ 	Johnny Araya																		
+ 	5/18/2022																			
+ 	Final Project- Karel and Jarel File Converter 										
+ 																						
+ 	This program coverts a Karel world file into a Jarel world file 					
+ 	and also from Jarel world file into a Karel world file and makes					
+ 	a new file with '_Converted' at the end of the file. Not only my 					
+ 	program can covert an individual file but it can convert a whole 					
+ 	directory of Jarel and Karel files if you prompt it too.							
+ 																						
+ 	Mars Hill University Honor Code														
+ 		We, the students of Mars Hill University, pledge ourselves 						
+ 		to uphold integrity, honesty, and academic responsibility 						
+ 		in and out of the classroom.												
+ 																						
+ 	Mars Hill University Honor Pledge													
+ 		On my honor, I have neither given nor received any academic aid 				
+ 		or information that would violate the Honor Code of Mars Hill University		
+ 																						
  ****************************************************************************************/
 
 #include <fstream>
@@ -107,9 +107,7 @@ int main(int argc, char **argv){
 }
 
 /************************************************
- *Converts a file into jarel, karel, or neither
- *by identifying the file type first and reading 
- *file hex
+ Converts a file into jarel, karel, or neither by identifying the file type first and reading file hex
  ***********************************************/
 void convertProperFile(char *fileName, int size){
     fstream in(fileName,ios::binary|ios::in);
@@ -142,7 +140,7 @@ void convertProperFile(char *fileName, int size){
 
 
 /************************************************
- * Checks if file is of karel type
+  Checks if file is of karel type
  ***********************************************/
 bool isKarel(unsigned char *file, unsigned char *karel, int size){
     int i;
@@ -159,7 +157,7 @@ bool isKarel(unsigned char *file, unsigned char *karel, int size){
 }
 
 /************************************************
- * Checks if file is of jarel type
+  Checks if file is of jarel type
  ***********************************************/
 bool isJarel(unsigned char *file, unsigned char *jarel, int size){
     int i;
@@ -176,14 +174,14 @@ bool isJarel(unsigned char *file, unsigned char *jarel, int size){
 
 
 /************************************************
- * Identifies if file is of karel type
+  Identifies if file is of karel type
  ***********************************************/
 void karelFile(void){
     cout << "This is a Karel world file" << endl;
 }
 
 /************************************************
- * Identifies if file is of jarel type
+  Identifies if file is of jarel type
  ***********************************************/
 void jarelFile(void){
     cout << "This is a Jarel world file" << endl;
@@ -191,7 +189,7 @@ void jarelFile(void){
 
 
 /************************************************
- * Does the byte value change to karel or jarel
+  Does the byte value change to karel or jarel
  ***********************************************/
 void convertFile(unsigned char *file, unsigned char *bytes, int size){
     int i;
@@ -206,8 +204,7 @@ void convertFile(unsigned char *file, unsigned char *bytes, int size){
 
 
 /************************************************
- * Writes to a new file with the original file name
- * followed by "_Converted" 
+ Writes to a new file with the original file name followed by "_Converted" 
  ***********************************************/
 void writingFile(unsigned char *file, char *fileName, int size){
     strcat (fileName, "_Converted"); //Concatenates "_Converted" to the end of the copied file name
