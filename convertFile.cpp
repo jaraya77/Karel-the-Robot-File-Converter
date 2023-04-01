@@ -1,13 +1,7 @@
  /***************************************************************************************
  	Johnny Araya																		
  	5/18/2022																			
- 	Final Project- Karel and Jarel File Converter 										
- 																						
- 	This program coverts a Karel world file into a Jarel world file 					
- 	and also from Jarel world file into a Karel world file and makes					
- 	a new file with '_Converted' at the end of the file. Not only my 					
- 	program can covert an individual file but it can convert a whole 					
- 	directory of Jarel and Karel files if you prompt it too.							
+ 	Final Project- Karel and Jarel File Converter 																
  																						
  	Mars Hill University Honor Code														
  		We, the students of Mars Hill University, pledge ourselves 						
